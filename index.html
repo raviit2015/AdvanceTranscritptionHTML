@@ -36,6 +36,12 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+        li>a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,48 +52,48 @@
 
     <!-- header-start -->
     <header>
-        <div class="header-area ">
+        <div class="header-area" style="background-color: cadetblue">
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="img/headerLogo.png" alt="" style="height: 60px">
-                                </a>
+                    <!-- <div class="align-items-center"> -->
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3">
+                                <a routerLink=''>
+                                    <img src="img/headerLogo.png" alt="" style="height: 67px; padding: 10px 0px; margin-right: 0;">
+                               </a>
                             </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="menu_wrap d-none d-lg-block">
-                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
-                                    <div class="main-menu">
-                                        <nav>
-                                            <ul id="navigation">
-                                                <li><a href="index.html">home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="#">Medical Transcription <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="emrTranscription.html">EMR Transcription</a></li>
-                                                        <li><a href="practiceFusion.html">Practice Fusion</a></li>
-                                                        <li><a href="mobileDictataion.html">Mobile Dictation</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="howItWorks.html">How It Works</a></li>
-                                                <li><a href="hippa.html">HIPPA</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
+                            <div class="col-xl-9 col-lg-9" style="margin-top: 15px;">
+                                <div class="menu_wrap d-none d-lg-block" style="padding-top: 6px">
+                                    <div class="menu_wrap_inner d-flex justify-content-end">
+                                        <div class="main-menu">
+                                            <nav>
+                                                <ul id="navigation">
+                                                    
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a>Medical Transcription <i class="ti-angle-down"></i></a>
+                                                        <ul class="submenu">
+                                                            <li><a href="emrTranscription.html">EMR Transcription</a></li>
+                                                            <li><a href="practiceFusion.html">Practice Fusion</a></li>
+                                                            <li><a href="mobileDictataion.html">Mobile Dictation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="howItWorks.html">How It works</a></li>
+                                                    <li><a href="hippa.html">HIPPA</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
-                                 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -97,17 +103,15 @@
     <!-- slider_area_start -->
     <div class="slider_area">
         <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_newImage overlay img-responsive" style="background-position: right">
+            <div class="single_slider  d-flex align-items-center slider_bg_newImage img-responsive">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="slider_text ">
-                                    
-                                   
-                                <span> GET HASSLE-FREE MEDICAL TRANSCRIPTION SERVICES</span>
-                                <h3> <span>WITH EHR TRANSCRIPTIONS</span> <br>
-                                    AT JUST 5 CENTS PER LINE.</h3>
-                                <a href="https://advancetranscription.wufoo.com/forms/z82i7hz1e1m3hc/" class="boxed-btn5">
+                            <div class="slider_text">
+                                <span style="color: black;"> Get hassle-free medical transcription services with EHR Transcriptions</span>
+                                <span style="color: black;">at just 5 cents per line</span>
+                                <b> <span style="font-size: 43px;color:black">Advance Transcription Services</span></b><br>
+                                <a href="https://advancetranscription.wufoo.com/forms/z82i7hz1e1m3hc/" class="boxed-btn5 btn btn-primary">
                                     Sign Up Now For Free Trial
                                 </a>
                             </div>
@@ -120,13 +124,13 @@
     <!-- slider_area_end -->
 
     <!-- welcome_clicnic_area_start -->
-    <div class="welcome_clicnic_area">
+    <div class="" style="margin-top: 44px">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
                     <div class="welcome_thumb">
                         <div class="thumb_1">
-                            <img src="img/about/1.jpg" alt="">
+                            <img src="img/about/1.jpg" alt="" style="height: 460px">
                         </div>
                     </div>
                 </div>
@@ -147,19 +151,21 @@
             </div>
         </div>
     </div>
-
+<br>
     <div class="banner">
+        <br>
          <h2> 
-                Medical Transcription Services
+                Medical Transcription Services<br>
                 With Fully Integrated With All Major EMR/EHR Software’s:
          </h2>
-         <hr>
-         <p> Practice Fusion, CareCloud, Care360, SOAPware, MediEMR, Centricity, PrognoCIS, AdvancedMD, AthenaHealth, NextGen, Epic, and lot of other EMR/EHR products. Contact us today for a custom quote. </p>
+         <hr style="width: 50px; display: block; margin-top: 0.5em; margin-bottom: 0.5em; align-items: center; margin-right: auto; border-style: solid; border-width: 2px; border-color: black;">
+         <p style="text-align: center; padding: 10px; color: white;"> 
+             Practice Fusion, CareCloud, Care360, SOAPware, MediEMR, Centricity, PrognoCIS, AdvancedMD, AthenaHealth, NextGen, Epic, and lot of other EMR/EHR products. Contact us today for a custom quote. </p>
             
     </div>
+    <br>
     <!-- welcome_clicnic_area_end -->
 
-    <div>
             <div class="row">
                     <div class="">
                             <img class="img-logo" src="img\fwdlogos\0c8ce25a909873cdfb1d3cf735053623.png" alt="No Imahe">
@@ -203,11 +209,10 @@
                         <img class="img-logo" src="img\fwdlogos\SOAP WARE.png" alt="">
                     </div>
                 </div>
-    </div>
 
 
     <!-- expert_doctors_area_start -->
-    <div class="expert_doctors_area">
+    <div class=""  style="margin-top: 44px">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-lg-6">
@@ -220,10 +225,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_expert">
                         <div class="expert_thumb">
-                            <img src="img/about/callCenter.jpg"  style="height: 200px;width: 180px; margin-left: 78px" alt="">
+                            <img src="img/about/callCenter.jpg"  style="height: 200px;width: 180px; margin-left: 78px" class="img-responsive" alt="">
                         </div>
-                        <div class="experts_name text-center">
-                            <h3>Dictation Option</h3>
+                        <div class="experts_name">
+                            <h3 class="options text-center">Dictation Option</h3>
                             <span>
                                     <ul>
                                         <li class="squareList" style="margin-left: 30px">Dictate from any telephone to our Toll-Free dictation line, available 24/7/365.</li>
@@ -237,10 +242,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_expert">
                         <div class="expert_thumb">
-                            <img src="img/about/deliver.png"  style="height: 200px;width: 180px ; margin-left: 78px" alt="">
+                            <img src="img/about/deliver.png"  style="height: 200px;width: 180px ; margin-left: 78px" class="img-responsive" alt="">
                         </div>
-                        <div class="experts_name text-center">
-                                <h3 class="text-center">Delivery options</h3>
+                        <div class="experts_name">
+                                <h3 class="options text-center">Delivery options</h3>
                                 <span>
                                     <ul>
                                         <li class="squareList" style="margin-left: 30px">Secure e-mail delivery.</li>
@@ -255,10 +260,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_expert">
                         <div class="expert_thumb">
-                            <img src="img/about/dollar.jpg" style="height: 200px;width: 180px ; margin-left: 78px" alt="">
+                            <img src="img/about/dollar.jpg" style="height: 200px;width: 180px ; margin-left: 78px" class="img-responsive" alt="">
                         </div>
-                        <div class="experts_name text-center">
-                                <h3 class="text-center">Pricing</h3>
+                        <div class="experts_name">
+                                <h3 class="options text-center">Pricing</h3>
                                 <span>
                                     <ul>
                                         <li class="squareList" style="margin-left: 30px">We charge 6 cents per line.
@@ -276,7 +281,8 @@
         </div>
     </div>
     <!-- expert_doctors_area_end -->
-
+<br>
+<br>
 
     <footer class="footer">
         <div class="footer_top">
@@ -333,10 +339,8 @@
                 <div class="row">
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
-                        <p class="copy_right text-center" style="text-align: center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy; Advance Transcriptions
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p class="copy_right text-center">
+                            Copyright &copy; Advance Transcriptions
                         </p>
                     </div>
                 </div>
